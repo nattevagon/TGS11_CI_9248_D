@@ -4,7 +4,7 @@ Class User extends RestController {
 	public function __construct() {
 		header('Access-Control-Allow-Origin: *');
 		header("Access-Control-Allow-Methods: GET, OPTIONS, POST, DELETE");
-		header("Access-Control-Allow-Headers: Content-Type, ContentLength, Accept-Encoding");
+		header("Access-Control-Allow-Headers: Content-Type, ContentLength, Accept-Encoding, Authorization");
 		parent::__construct();
 		$this->load->model('UserModel');
 		$this->load->library('form_validation');

@@ -1,8 +1,8 @@
 <?php
 
-use Restserver \Libraries\REST_Controller;
+use Restserver \Libraries\RestController;
 
-Class Service extends REST_Controller {
+Class Service extends RestController {
     public function __construct() { 
         header('Access-Control-Allow-Origin:*');
         header("Access-Control-Allow-Methods:GET,OPTIONS,POST,DELETE");
