@@ -10,7 +10,6 @@ Class User extends RestController {
 		$this->load->library('form_validation');
         $this->load->helper(['jwt','authorization']);     
 	}
-
 	public function index_get() {      
         $data = $this->verify_request();
         $status = parent::HTTP_OK;
